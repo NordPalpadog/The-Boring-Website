@@ -1,0 +1,23 @@
+# The-Boring-Website
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>The Boring Website</title>
+        <style>
+        </style>
+    </head>
+    </html>
+    <body>
+        <h1>The Boring Website</h1>
+        <img id="boring"src="https://st.depositphotos.com/1037178/2168/v/950/depositphotos_21688027-stock-illustration-smiley-vector-illustration-puzzled.jpg" alt="Boring", width="100">
+        <div id="message"></div>
+        <script>
+        var face=document.getElementById("boring");
+        var reaction=function(){document.getElementById("message").textContent += "go away ";}
+        var unreaction=function(){document.getElementById("message").textContent = "";}
+        face.addEventListener("mousemove",reaction)
+        face.addEventListener("mouseout",unreaction)
+        </script>
+    </body>
+</html>
